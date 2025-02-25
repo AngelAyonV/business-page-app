@@ -1,13 +1,11 @@
-
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container">
-
         {/* Logo */}
         <a className="navbar-brand my-3" href="#">
           <img
-            src="/src/assets/images/Imagen 1.jpg"
+            src="/src/assets/images/image-example.jpg"
             alt="Logo Empresa"
             width="50"
             height="50"
@@ -30,13 +28,19 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#home">Home</a>
+              <a className="nav-link" href="#home">
+                Home
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about">About</a>
+              <a className="nav-link" href="#about">
+                About
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact">Contact</a>
+              <a className="nav-link" href="#contact">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
