@@ -173,3 +173,8 @@ p {
 .footer a:hover {
   color: #f8d210 !important; /* Amarillo al pasar el mouse */
 }
+
+section {
+  padding-top: 80px; /* Ajusta el espacio para que no se encimen */
+  padding-bottom: 80px;
+}

@@ -15,7 +15,7 @@ const BusinessPageApp = () => {
         {/* Sección Home */}
         <section
           id="home"
-          className="vh-100 d-flex align-items-center justify-content-center"
+          className="min-vh-100 d-flex align-items-center justify-content-center py-5"
         >
           <div className="container text-center">
             <HomePage />
@@ -25,7 +25,7 @@ const BusinessPageApp = () => {
         {/* Sección Nosotros */}
         <section
           id="about"
-          className="vh-100 d-flex align-items-center bg-light"
+          className="min-vh-100 d-flex align-items-center justify-content-center bg-light py-5"
         >
           <div className="container text-center">
             <AboutPage />
@@ -33,7 +33,10 @@ const BusinessPageApp = () => {
         </section>
 
         {/* Sección Contacto */}
-        <section id="contact" className="vh-100 d-flex align-items-center">
+        <section
+          id="contact"
+          className="min-vh-100 d-flex align-items-center justify-content-center py-5"
+        >
           <div className="container text-center">
             <ContactPage />
           </div>
