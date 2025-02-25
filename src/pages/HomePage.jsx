@@ -7,7 +7,7 @@ const HomePage = () => {
           <h1 className="fw-bold">Bienvenido a Nuestra Empresa</h1>
           <hr />
           <p className="text-muted">
-            Ofrecemos soluciones innovadoras parsa tu negocio. ¡Conócenos!
+            Ofrecemos soluciones innovadoras parsa tu negocio.   ¡Conócenos!
           </p>
           <a href="#about" className="btn btn-primary mt-3">
             Saber más
