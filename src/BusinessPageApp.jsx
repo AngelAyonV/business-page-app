@@ -10,31 +10,36 @@ const BusinessPageApp = () => {
   return (
     <>
       <Navbar />
-      <div className="container mt-5">
+
+      <div className="container-fluid p-0">
         {/* Sección Home */}
-        <section id="home" className="py-5 vh-100 d-flex align-items-center">
-          <HomePage />
+        <section
+          id="home"
+          className="vh-100 d-flex align-items-center justify-content-center"
+        >
+          <div className="container text-center">
+            <HomePage />
+          </div>
         </section>
 
         {/* Sección Nosotros */}
         <section
           id="about"
-          className="py-5 vh-100 d-flex align-items-center bg-light"
+          className="vh-100 d-flex align-items-center bg-light"
         >
-          <div className="text-center w-100">
+          <div className="container text-center">
             <AboutPage />
           </div>
         </section>
 
         {/* Sección Contacto */}
-        <section
-          id="contact"
-          className="py-5 vh-100 d-flex align-items-center mb-5"
-        >
-          <ContactPage />
+        <section id="contact" className="vh-100 d-flex align-items-center">
+          <div className="container text-center">
+            <ContactPage />
+          </div>
         </section>
       </div>
-      {/* Footer */}
+
       <Footer />
     </>
   );
