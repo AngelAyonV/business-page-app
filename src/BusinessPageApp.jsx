@@ -27,7 +27,10 @@ const BusinessPageApp = () => {
         </section>
 
         {/* Sección Contacto */}
-        <section id="contact" className="py-5 vh-100 d-flex align-items-center">
+        <section
+          id="contact"
+          className="py-5 vh-100 d-flex align-items-center mb-5"
+        >
           <ContactPage />
         </section>
       </div>
