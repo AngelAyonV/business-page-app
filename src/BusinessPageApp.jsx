@@ -1,24 +1,33 @@
-import Navbar from "./components/Navbar"
+import {Navbar} from "./components/Navbar"
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
 
 const BusinessPageApp = () => {
     return (
-        <Router>
+        <>
           <Navbar />
-          <div className="container mt-4">
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="*" element={<h2>404 - Página no encontrada</h2>} />
-            </Routes>
+          <div className="container mt-5">
+            {/* Sección Home */}
+            <section id="home" className="py-5 vh-100 d-flex align-items-center">
+              <HomePage/>
+            </section>
+    
+            {/* Sección Nosotros */}
+            <section id="about" className="py-5 vh-100 d-flex align-items-center bg-light">
+              <div className="text-center w-100">
+                <AboutPage/>
+              </div>
+            </section>
+    
+            {/* Sección Contacto */}
+            <section id="contact" className="py-5 vh-100 d-flex align-items-center">
+              <ContactPage/>
+            </section>
           </div>
-        </Router>
+        </>
       );
 }
 
