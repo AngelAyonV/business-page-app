@@ -11,7 +11,7 @@ export const Navbar = () => {
             height="50"
             className="d-inline-block align-top mx-3"
           />
-          Company
+          Nombre de la empresa
         </a>
 
         <button
@@ -29,17 +29,17 @@ export const Navbar = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link" href="#home">
-                Home
+                Inicio
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#about">
-                About
+                Sobre nosotros
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#contact">
-                Contact
+                Contacto
               </a>
             </li>
           </ul>
